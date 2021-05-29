@@ -77,7 +77,7 @@ def exerciseha():
 
 if __name__ == '__main__':
     while True:
-        a = int(input("Enter The Number\n1 For Harry\n2 For Rohan\n3 For Hammad\nHere: "))
+        a = int(input("Enter The Number\n1 For Harry\n2 For Rohan\n3 For Hammad\nEnter q for Quit\nHere: "))
         if a == 1:
             print("For Harry")
             b = int(input("Enter The Number\n1 For Diet\n2 For Exercise\nHere: "))
@@ -99,5 +99,8 @@ if __name__ == '__main__':
                 dietha()
             elif b == 2:
                 exerciseha()
+        elif a == 'q' or a == 'Q':
+            print("Thanks For Coming")
+            exit()
         else:
             continue
